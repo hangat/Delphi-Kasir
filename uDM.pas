@@ -352,10 +352,10 @@ function TDM.DBConnect(C : TADOConnection):Boolean;
 var mydb : string;
 begin
   Result := False;
-  mydb := ChangeFileExt(Application.ExeName,'.accdb');
+  mydb := ChangeFileExt(Application.ExeName,'.mdb');
   try
     c.Close;
-    c.ConnectionString  := 'Provider=Microsoft.ACE.OLEDB.12.0;Data Source="' +
+    c.ConnectionString  := 'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source="' +
       mydb + '";Persist Security Info=False';
     c.Open;
     Result := True;
@@ -440,8 +440,6 @@ end;
 
 
 procedure TDM.InitRegister;
-var LastSaldo:Currency;
-    LastRecord: LongInt;
 begin
   if not(tbl_Register.Active) then
      tbl_Register.Open;

@@ -221,7 +221,6 @@ object DM: TDM
     Top = 64
   end
   object tbl_Barang: TADOTable
-    Active = True
     Connection = cn
     CursorType = ctStatic
     TableName = 'Barang'
@@ -303,7 +302,6 @@ object DM: TDM
     end
   end
   object tbl_Karyawan: TADOTable
-    Active = True
     Connection = cn
     CursorType = ctStatic
     TableName = 'Karyawan'
@@ -311,7 +309,6 @@ object DM: TDM
     Top = 256
   end
   object tbl_Pelanggan: TADOTable
-    Active = True
     Connection = cn
     CursorType = ctStatic
     TableName = 'Pelanggan'
@@ -394,11 +391,12 @@ object DM: TDM
   object cn: TADOConnection
     Connected = True
     ConnectionString = 
-      'Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\PROJECTS\D7\D10' +
-      '_Toko_006\D10_Toko_006.accdb;Persist Security Info=False;'
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\_D7\02. Resource' +
+      '\Delphi-Kasir-master\Delphi-Kasir-master\D10_Toko_006.mdb;Persis' +
+      't Security Info=False'
     LoginPrompt = False
     Mode = cmShareDenyNone
-    Provider = 'Microsoft.ACE.OLEDB.12.0'
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
     Left = 24
     Top = 16
   end
@@ -674,7 +672,6 @@ object DM: TDM
     Top = 368
   end
   object tbl_Suplayer: TADOTable
-    Active = True
     Connection = cn
     CursorType = ctStatic
     TableName = 'Suplayer'
@@ -747,7 +744,6 @@ object DM: TDM
     Top = 24
   end
   object qry_Penjualan: TADOQuery
-    Active = True
     Connection = cn
     CursorType = ctStatic
     Parameters = <
@@ -895,7 +891,6 @@ object DM: TDM
     Top = 208
   end
   object tbl_Item_Penjualan_2: TADOTable
-    Active = True
     Connection = cn
     CursorType = ctStatic
     IndexFieldNames = 'Penjualan_ID'
@@ -1194,7 +1189,6 @@ object DM: TDM
     Top = 80
   end
   object tbl_RekapBarang: TADOTable
-    Active = True
     Connection = cn
     CursorType = ctStatic
     TableName = 'RekapBarang'
@@ -1282,7 +1276,6 @@ object DM: TDM
     Top = 64
   end
   object qry_RekapBarang: TADOQuery
-    Active = True
     Connection = cn
     CursorType = ctStatic
     Parameters = <
@@ -1407,7 +1400,6 @@ object DM: TDM
     Top = 617
   end
   object qry_Rekap_Transaksi: TADOQuery
-    Active = True
     Connection = cn
     CursorType = ctStatic
     Parameters = <

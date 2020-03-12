@@ -1,6 +1,6 @@
 object frmCariBarang: TfrmCariBarang
-  Left = 379
-  Top = 114
+  Left = 248
+  Top = 128
   Width = 681
   Height = 478
   Caption = '.:. Cari Barang .:.'
@@ -97,11 +97,19 @@ object frmCariBarang: TfrmCariBarang
   end
   object cn: TADOConnection
     ConnectionString = 
-      'Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\PROJECTS\D7\D10' +
-      '_Toko_006\Project1.accdb;Persist Security Info=False;'
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=D:\_D' +
+      '7\02. Resource\Delphi-Kasir-master\Delphi-Kasir-master\D10_Toko_' +
+      '006.mdb;Mode=Share Deny None;Jet OLEDB:System database="";Jet OL' +
+      'EDB:Registry Path="";Jet OLEDB:Database Password="";Jet OLEDB:En' +
+      'gine Type=5;Jet OLEDB:Database Locking Mode=0;Jet OLEDB:Global P' +
+      'artial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Jet OLEDB' +
+      ':New Database Password="";Jet OLEDB:Create System Database=False' +
+      ';Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don'#39't Copy Locale on' +
+      ' Compact=False;Jet OLEDB:Compact Without Replica Repair=False;Je' +
+      't OLEDB:SFP=False;'
     LoginPrompt = False
     Mode = cmShareDenyNone
-    Provider = 'Microsoft.ACE.OLEDB.12.0'
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
     Left = 624
     Top = 8
   end
